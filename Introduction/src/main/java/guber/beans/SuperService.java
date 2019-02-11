@@ -10,15 +10,8 @@ import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 import javax.sql.DataSource;
 import java.util.List;
 
-/**
- * Created by Alexey_Zinovyev on 12-Jun-17.
- */
 public class SuperService {
-
-	public static final String URL = "jdbc:mysql://localhost:3306/guber";
-	public static final String USER_NAME = "root";
-	public static final String PASSWORD = "pass";
-
+	
 	private JdbcTemplate jdbcTemplate;
 	private SimpleJdbcInsert insertTemplate;
 	private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
